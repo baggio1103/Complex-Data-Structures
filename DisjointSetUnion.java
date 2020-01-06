@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 public class DisjointSetUnion {
-
-    public Node root;
+    
     private ArrayList<Node> list = new ArrayList<>();
 
     public DisjointSetUnion(){
@@ -10,7 +9,6 @@ public class DisjointSetUnion {
 
     public void MakeSet(Node node){
         // here we create a new tree all the time
-        this.root = node;
         list.add(node);
     }
 
