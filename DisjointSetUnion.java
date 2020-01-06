@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class DisjointSetUnion {
 
     public Node root;
+    private ArrayList<Node> list = new ArrayList<>();
 
     public DisjointSetUnion(){
     }
@@ -8,6 +11,7 @@ public class DisjointSetUnion {
     public void MakeSet(Node node){
         // here we create a new tree all the time
         this.root = node;
+        list.add(node);
     }
 
     public Node Find(Node node){
@@ -43,9 +47,10 @@ public class DisjointSetUnion {
                 }
             }
             leftNode.parent = right;
+            list.remove(leftNode);
         }
     }
-    
+
     public static void main(String[] args) {
         DisjointSetUnion dsu = new DisjointSetUnion();
         Node node = new Node(10, null);
@@ -59,6 +64,8 @@ public class DisjointSetUnion {
         dsu.Union(node, node1);
         dsu.Union(node2, node3);
         dsu.Union(node, node2);
+        System.out.println(dsu.list.size());
+        System.out.println(1 == dsu.list.size());
     }
 
 }
