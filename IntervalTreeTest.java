@@ -14,6 +14,6 @@ public class IntervalTreeTest {
         assertArrayEquals(new int[]{30, 40}, tree.search(new int[]{25,35}));
         assertArrayEquals(new int[]{15, 20}, tree.search(new int[]{16,18}));
         assertArrayEquals(new int[]{5, 20}, tree.search(new int[]{6,9}));
-        assertArrayEquals(new int[]{15, 20}, tree.search(new int[]{18,21}));
+        assertArrayEquals(null , tree.search(new int[]{41,50}));
     }
 }
