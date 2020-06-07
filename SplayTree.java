@@ -1,5 +1,3 @@
-package SplayTree;
-
 public class SplayTree {
     Node root;
     public SplayTree(Node root){
