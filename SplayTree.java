@@ -1,5 +1,6 @@
 public class SplayTree {
-    Node root;
+    Node root; 
+    
     public SplayTree(Node root){
         this.root = root;
     }
