@@ -6,11 +6,11 @@ public class SkewHeapTest {
     @Test
     public void merge() {
         Node node = new Node(5);           //                             5                                                                            3
-        node.leftChild = new Node(10);     //                           /   \                                                                       /      \
+        node.leftChild = new Node(10);     //            node1          /   \                                                                       /      \
         node.rightChild = new Node(12);    //                         10     12                                                                    5        7
 
         Node node1 = new Node(3);           //                      3                    After merge(node, node1)                                /   \     /
-        node1.leftChild = new Node(7);      //                    /    \                                                                        8    10 | 14
+        node1.leftChild = new Node(7);      //          node2     /    \                                                                        8    10 | 14
         node1.rightChild = new Node(8);     //                  7        8                                                                     /
         node1.leftChild.leftChild = new Node(14); //          /                                                                               12
                                                   //        14
