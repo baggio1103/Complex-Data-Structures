@@ -61,7 +61,7 @@ public class SkewHeapTest {
         heap.add(new Node(6));     //         /   \                 remove();                    /   \
         heap.add(new Node(1));     //        7      5                                          6      5
         heap.add(new Node(7));     //             /   \                                       /
-                                         //            5      6                                    7
+                                   //            5      6                                    7
 
         Node removed = heap.remove(); //removing the root and then rebuilding the tree
         assertEquals(1, removed.value);
