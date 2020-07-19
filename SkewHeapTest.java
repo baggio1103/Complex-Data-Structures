@@ -13,7 +13,7 @@ public class SkewHeapTest {
         node1.leftChild = new Node(7);      //                    /    \                                                                        8    10 | 14
         node1.rightChild = new Node(8);     //                  7        8                                                                     /
         node1.leftChild.leftChild = new Node(14); //          /                                                                               12
-                                                        //        14
+                                                  //        14
         SkewHeap skewHeap = new SkewHeap(node);
         node = skewHeap.merge(node, node1);
         assertEquals(3, node.value);
@@ -37,9 +37,9 @@ public class SkewHeapTest {
     public void add() {
         SkewHeap heap = new SkewHeap(new Node(3));  //     3   add(5) = >         3    add(6) = >         3         add(1)  = >                 1
         heap.add(new Node(5));                     //                            /                      /    \                                /
-        Node root = heap.root;                          //                            5                      6      5                              3
-        assertEquals(3, root.value);           //                                                                                       /   \
-        assertEquals(5, root.leftChild.value); //                                                                                      5     6
+        Node root = heap.root;                    //                            5                      6      5                              3
+        assertEquals(3, root.value);              //                                                                                       /   \
+        assertEquals(5, root.leftChild.value);    //                                                                                      5     6
         assertNull(root.rightChild);
 
         heap.add(new Node(6));
