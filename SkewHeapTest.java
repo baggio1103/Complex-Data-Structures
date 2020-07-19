@@ -59,7 +59,7 @@ public class SkewHeapTest {
         SkewHeap heap = new SkewHeap(new Node(3));
         heap.add(new Node(5));     //           1                                                  3
         heap.add(new Node(6));     //         /   \                 remove();                    /   \
-        heap.add(new Node(1));     //        7      5                                          6      5
+        heap.add(new Node(1));     //        7      3                                          6      5
         heap.add(new Node(7));     //             /   \                                       /
                                    //            5      6                                    7
 
