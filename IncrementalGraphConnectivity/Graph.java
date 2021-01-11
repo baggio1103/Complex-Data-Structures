@@ -104,6 +104,12 @@ public class Graph {
      public List<Bridge> getBridges(){
           return bridges;
      }
+     
+     public boolean areNodesConnected(Node from, Node to){
+          return connectivityComponent.areNodesConnected(from, to) ||
+             doubleEdgeConnectivityComponent.areNodesConnected(from, to);
+     }
+
 
 }
 
