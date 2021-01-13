@@ -1,5 +1,5 @@
 # Complex Data-Structures
-[Incremental Graph Connectivity - The problem of search of 2-connected subgraphs, or bridges](https://github.com/baggio1103/Complex-Data-Structures/tree/master/IncrementalGraphConnectivity)
+[Incremental Graph Connectivity - The problem of searching 2-connected subgraphs, or bridges](https://github.com/baggio1103/Complex-Data-Structures/tree/master/IncrementalGraphConnectivity)
 
 [2-D Range Tree - The problem of searching points in a rectangle](https://github.com/baggio1103/Complex-Data-Structures/blob/master/2DRangeTree.java)
 
