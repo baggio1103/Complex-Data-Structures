@@ -11,7 +11,7 @@
 
 [Euler Graph](https://github.com/baggio1103/Complex-Data-Structures/blob/master/EulerGraph.java)
 
-[Huffman Tree](https://github.com/baggio1103/Complex-Data-Structures/blob/master/HuffmanTree.java)
+[Huffman Tree - The problem of data compression. Also used to encode and decode data](https://github.com/baggio1103/Complex-Data-Structures/blob/master/HuffmanTree.java)
 
 [Immutable Queue](https://github.com/baggio1103/Complex-Data-Structures/blob/master/ImmQueue.java)
 
